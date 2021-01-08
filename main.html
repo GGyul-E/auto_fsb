@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>autoFSB</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        input:focus{
+            outline:none;
+        }
+        header {
+            background-color: aliceblue;
+            width: 100%;
+            height: 55px;
+            padding-top: 7px;
+        }
+        main {
+            background-color: white;
+            height: 100px;
+        }
+        .title{
+            color: black;
+            font-family: "Nanum Gothic", sans-serif;
+            position: absolute;
+            font-size: 25px;
+            margin-left: 52px;
+            margin-top: 10px;
+        }
+        .title_img{
+            width: auto;
+            height: 45px;
+            position: absolute;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        article{
+            display: block;
+            height: 522px;
+            margin-top: 25px;
+            position: relative;
+            overflow: visible;
+        }
+        footer{
+            display: block;
+            height: 100px;
+            background-color:whitesmoke;
+
+        }
+        .input{
+            margin-left: 8px;
+        }
+        .input_bar{
+            border-style: solid;
+            border-color: lightslategray;
+            border-radius: 6px;
+            height: 25px;
+            width: 160px;
+        }
+    </style>
+</head>
+<header style="display:block;">
+<body style="margin:0px;">
+        <img class = "title_img" src="title.png">
+        <span class="title">AutoFSB</span>
+    </header>
+    <article>
+        <form method="post">
+            <p class="input">
+                <span>
+                    <label for="addr">Address</label><br>
+                    <input class = "input_bar" type="text" name="addr" placeholder="Input Address">
+                </span>
+                <br><br>
+                <span>
+                    <label for="value">Value</label><br>
+                    <input class = "input_bar" type="text" name="value" placeholder="Input Value">
+                </span>
+            </p>
+        </form>
+    </article>
+    <footer>
+    </footer>
+</body>
+</html>
